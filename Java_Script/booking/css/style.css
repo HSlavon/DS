@@ -1,0 +1,47 @@
+body {
+    background: linear-gradient(to top, #c7d8e6, #9bade6);
+    font-family: sans-serif, Arial, Tahoma;
+}
+/*стиль сортировки*/
+
+
+/*стиль списка оттелей*/
+.hotel {
+    display: block;
+}
+
+article,
+.hotel {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    padding: 5px;
+    color: #eeb5dc;
+
+}
+
+.name {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.price {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 100px;
+}
+
+.rating {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    float: right;
+    top: 100px;
+}

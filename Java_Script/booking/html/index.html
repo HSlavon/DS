@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Event-hotels-sorting</title>
+</head>
+<body>
+    <form class="searchForm" method="get" id="searchForm">
+        <label for="date-from">Заезд</label>
+        <input type="date" id="date-from">
+        <label for="date-to">Выезд</label>
+        <input type="date" id="date-to">
+        <label for="guests">Количество человек</label>
+        <input type="number" id="guests">
+        <label for="rooms">Комнаты</label>
+        <input type="number" id="rooms">
+        <button type="submit">Найти отель</button>
+    </form>
+
+    <form class="filter-list">
+        <input type="radio" class="filter" id="filter-all" name="filter">
+        <label for="filter-all">Все</label>
+        <input type="radio" class="filter" id="height-price" name="filter">
+        <label for="height-price">Сначала дорогие</label>
+        <input type="radio" class="filter" id="low-price" name="filter">
+        <label for="low-price">Сначала дешевые</label>
+        <input type="radio" class="filter" id="height-rating" name="filter">
+        <label for="height-rating">По убыванию рейтинга</label>
+        <input type="radio" class="filter" id="low-rating" name="filter">
+        <label for="low-rating">По возрастанию рейтинга</label>
+        <input type="reset" value="Сбросить фильтры">
+    </form>
+
+    <div class="hotelList"></div>
+    <template id="hotelTemplate" style="display: none">
+        <article class="hotel">
+            <h2 class="name"></h2>
+            <div class="price"></div>
+            <div class="rating"></div>
+        </article>
+    </template>
+
+    <footer>FOOTER</footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

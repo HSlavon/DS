@@ -1,0 +1,86 @@
+[
+  {
+    "name" : "New-York",
+    "price" : 3200,
+    "rating" : 5,
+    "image" : "Academy/studyProject1/image/15237_227_b.jpg"
+  },
+  {
+    "name" : "Los-Angels",
+    "price" : 3000,
+    "rating" : 4.5,
+    "image" : "Academy/studyProject1/image/58201_244_b.jpg"
+  },
+  {
+    "name" : "Dallas",
+    "price" : 2800,
+    "rating" : 4,
+    "image" : "Academy/studyProject1/image/1619187_65_b.jpg"
+  },
+  {
+    "name" : "Paris",
+    "price" : 2600,
+    "rating" : 4,
+    "image" : "Academy/studyProject1/image/1619187_65_b.jpg"
+  },
+  {
+    "name" : "Milan",
+    "price" : 3100,
+    "rating" : 5,
+    "image" : "Academy/studyProject1/image/15237_227_b.jpg"
+  },
+  {
+    "name" : "Rome",
+    "price" : 3050,
+    "rating" : 4.8,
+    "image" : "Academy/studyProject1/image/58201_244_b.jpg"
+  },
+  {
+    "name" : "Greece",
+    "price" : 2880,
+    "rating" : 4.2,
+    "image" : "Academy/studyProject1/image/1619187_65_b.jpg"
+  },
+  {
+    "name" : "Telaviv",
+    "price" : 3250,
+    "rating" : 5,
+    "image" : "Academy/studyProject1/image/15237_227_b.jpg"
+  },
+  {
+    "name" : "Tokyo",
+    "price" : 3000,
+    "rating" : 4.5,
+    "image" : "Academy/studyProject1/image/58201_244_b.jpg"
+  },
+  {
+    "name" : "Berlin",
+    "price" : 3500,
+    "rating" : 4.9,
+    "image" : "Academy/studyProject1/image/1619187_65_b.jpg"
+  },
+  {
+    "name" : "Moscow",
+    "price" : 2200,
+    "rating" : 4,
+    "image" : "Academy/studyProject1/image/15237_227_b.jpg"
+  },
+  {
+    "name" : "Lviv",
+    "price" : 1600,
+    "rating" : 3.8,
+    "image" : "Academy/studyProject1/image/58201_244_b.jpg"
+  },
+  {
+    "name" : "Kiev",
+    "price" : 1800,
+    "rating" : 3.5,
+    "image" : "Academy/studyProject1/image/1619187_65_b.jpg"
+  },
+  {
+    "name" : "Kipr",
+    "price" : 2100,
+    "rating" : 4.4,
+    "image" : "Academy/studyProject1/image/1619187_65_b.jpg"
+  }
+]
