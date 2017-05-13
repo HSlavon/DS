@@ -45,3 +45,6 @@ article,
     float: right;
     top: 100px;
 }
+.hidden {
+    visibility: hidden;
+}

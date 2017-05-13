@@ -17,7 +17,6 @@
         <input type="number" id="rooms">
         <button type="submit">Найти отель</button>
     </form>
-
     <form class="filter-list">
         <input type="radio" class="filter" id="filter-all" name="filter">
         <label for="filter-all">Все</label>
@@ -31,12 +30,8 @@
         <label for="low-rating">По возрастанию рейтинга</label>
         <input type="reset" value="Сбросить фильтры">
     </form>
-
     <div class="hotelList"></div>
-
-
     <footer>FOOTER</footer>
-
     <template id="hotelTemplate" style="display: none">
         <article class="hotel">
             <h2 class="name"></h2>
@@ -44,8 +39,17 @@
             <div class="rating"></div>
         </article>
     </template>
-
+    <div class="gallery hidden">
+        <button class="gallery-close">&times;</button>
+        <div class="gallery-preview"></div>
+        <div class="gallery-controls">
+            <button class="gallery-controls-left"> < </button>
+            <button class="gallery-controls-right"> > </button>
+        </div>
+    </div>
     <script src="../js/form.js"></script>
+    <script src="../js/hotel.js"></script>
+    <script src="../js/gallery.js"></script>
     <script src="../js/main.js"></script>
 </body>
 </html>

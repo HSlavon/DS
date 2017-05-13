@@ -7,22 +7,10 @@ var hotels = [];
 var filteredHotels = [];
 var page = 0;
 var PAGE_SIZE = 6;
+var Hotel;
+var gallery = new Gallery();
+var hotelElement;
 getHotels();
-
-// загрузка отелей в фрагмент
-function getElementFromTemplate(data) {
-    var template = document.querySelector('#hotelTemplate');
-    var element = template.content.children[0].cloneNode(true);
-    element.querySelector('.name').textContent = data.name;
-    element.querySelector('.price').textContent = data.price + '$';
-    element.querySelector('.rating').textContent = 'Rating - ' + data.rating;
-    var background = new Image();
-    background.onload = function () {
-        element.style.backgroundImage = 'url(\'' + background.src + '\')';
-    };
-    background.src = '/' + data.image;
-    return element;
-}
 
 var container = document.querySelector('.hotelList');
 var filter = document.querySelector('.filter-list');
@@ -75,10 +63,21 @@ function renderHotels(hotels, page, replace) {
     var pageHotels = hotels.slice(from, to);
 
     pageHotels.forEach(function (hotel) {
-        var element = getElementFromTemplate(hotel);
-        fragment.appendChild(element);
+        hotelElement = new Hotel(hotel);
+        hotelElement.render();
+        fragment.appendChild(hotelElement.element);
+        hotelElement.element.addEventListener('click,', _onClick);
     });
+
     container.appendChild(fragment);
+}
+
+function _onClick(evt) {
+    alert('click');
+    // evt.preventDefault();
+    // var elementC = evt.target;
+    // console.log('++++');
+    // gallery.show();
 }
 
 // фильтрация списка отелей
@@ -116,7 +115,7 @@ function setActiveFilter(id) {
             break;
     }
     renderHotels(filteredHotels, 0, true);
-    console.log(filteredHotels);
+    // console.log(filteredHotels);
     activeFilter = id;
 }
 
@@ -132,7 +131,9 @@ function getHotels() {
     };
     xhr.send();
 }
+/*
+window.addEventListener('click', _onClick);
 
-
-
-
+function _onClick(evt) {
+    alert('click');
+}*/
